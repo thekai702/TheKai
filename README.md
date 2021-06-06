@@ -1,4 +1,1 @@
 # TheKai
-# TheKai
-# jitti
-# thekai

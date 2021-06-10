@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CSS Template</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <style>
+        body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(22, 28, 29);
+        }
+
+        p {
+        color: white;
+        }
+
+        header {
+        margin: 20px 400px 20px 400px;
+        padding: 10px 0px 10px 0px;
+        border-radius: 12px;
+        background-color:royalblue;
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+        }
+
+        section{
+        margin: 20px 400px 20px 400px;
+        padding: 10px 0px 10px 0px;
+        border-radius: 12px;
+        }
+
+        .grid-container {
+        margin: 0px 0px 0px 120px;
+        display: grid;
+        grid-template-columns: 150px 350px auto;
+        grid-gap: 20px;
+        }
+
+        footer {
+        margin: 20px 400px 20px 400px;
+        padding: 10px 0px 10px 0px;
+        border-radius: 12px;
+        background-color:royalblue;
+        padding: 10px;
+        text-align: center;
+        color: white;
+        }
+        
+        .fa {
+        font-size: 20px;
+        }
+
+        </style>
+    </head>
+    <body>
+    <header>
+        <h2>The Kai My Profile</h2>
+    </header>
+
+    <section>
+        <div>
+            <div class="grid-container">
+            <div>
+                <p class="thick">Fullname:</p>
+                <p class="thick">Date of Birth:</p>
+                <p class="thick">Age:</p>
+                <p class="thick">Bachelor's degree:</p>
+                <p class="thick">Studied At:</p>
+                <p class="thick">Work At:</p>
+                <p class="thick">Position:</p>
+            </div>
+            <div>
+                <p>{{ name }}</p>
+                <p>{{ birth }}</p>
+                <p>{{ age }}</p>
+                <p>{{ bachelor }}</p>
+                <p>{{ studied }}</p>
+                <p>{{ work }}</p>
+                <p>{{ position }}</p>
+            </div>
+            <img
+            src="https://avatars.githubusercontent.com/u/77427400?s=400&u=f284346b977cfde6685e2ac3c22b845374b60899&v=4"
+            style="width: 230px; height: 250px;
+                padding: 10px 0px 10px 0px;
+                border-radius: 20px;"
+            />
+        </div>
+            <p>Subscribe Me:</p>
+            <form action="." method="POST">
+                {% csrf_token %}
+                {{ form.email }}
+                <input type="text" name="email"/>
+                <button type="submit">Subscribe</button>
+            </form>
+    </section>
+
+    <footer>
+    <p>
+        <div style="padding: 20px 300px 20px 300px"> 
+        <a href="https://www.facebook.com/TheKai702/" class="fa fa-facebook" style="margin: 0px 20px 0px 20px"></a>
+        <a href="https://www.instagram.com/_the_kai__/" class="fa fa-instagram" style="margin: 0px 20px 0px 20px"></a>
+      </div>
+    </p>
+    </footer>
+
+    </body>
+ </html>

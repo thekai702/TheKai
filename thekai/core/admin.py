@@ -1,3 +1,11 @@
 from django.contrib import admin
+from django.http import request
+from django.shortcuts import render
 
-# Register your models here.
+from core.models import Profile
+
+# @admin.register(Profile)
+# class ProfileAdmin(admin.ModelAdmin):
+#     list_display =(
+#         "name","email",
+#     )
